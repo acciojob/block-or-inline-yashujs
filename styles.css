@@ -1,53 +1,32 @@
- /* Basic reset for better visibility */
-body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
-  line-height: 1.5;
-}
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
 
-/* Styling each container divblock */
-div {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin-bottom: 10px;
-}
+  /* Add margin between examples */
+  div {
+    margin-bottom: 10px;
+  }
 
-/* Add spacing between each example */
-p {
-  font-weight: bold;
-  color: #333;
-  margin: 5px 0 20px;
-}
+  /* Inline elements spacing for clarity */
+  button, input, span, cite, code, sup, sub {
+    margin-right: 8px;
+  }
 
-/* Make inputs and buttons more visible */
-button, input {
-  padding: 6px 12px;
-  margin: 4px;
-}
+  /* Light background to differentiate element types */
+  div[data-ns-test*="div"],
+  p[data-ns-test*="p"],
+  h1[data-ns-test*="h1"] {
+    background-color: #e8f4ff; /* Light blue for block */
+  }
 
-/* Inline elements will appear side by side naturally, 
-   but we give them spacing to see the behavior clearly */
-span, cite, code, sup, sub {
-  margin-right: 8px;
-}
+  button, input, span, cite, code, sup, sub {
+    background-color: #f7f7f7; /* Light gray for inline */
+  }
 
-/* Add background colors to quickly identify element types */
-div[data-ns-test*="div"],
-p[data-ns-test*="p"],
-h1[data-ns-test*="h1"] {
-  background-color: #f0f8ff; /* Light blue for block elements */
-}
-
-button, 
-input,
-span, 
-cite, 
-code, 
-sup, 
-sub {
-  background-color: #f9f9f9; /* Light grey for inline elements */
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
+  /* Style for answer text */
+  p {
+    font-weight: bold;
+  }
 
 /* Your CSS Code here. */
